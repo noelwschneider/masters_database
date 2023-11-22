@@ -4,12 +4,17 @@
   "description": "",
   "main": "fileToObject.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/server.js",
+    "start": "open public/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jszip": "^3.10.1"
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "jszip": "^3.10.1",
+    "nodemon": "^3.0.1"
   }
 }

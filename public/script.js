@@ -1,10 +1,18 @@
 import fileToObject from "./fileToObject.js";
+import serverTest from "./serverTest.js";
 
+/*
+fetch('./extracted_objects/test/2002.json')
+.then(response => response.json())
+.then(data => console.log(data));
+*/
+
+serverTest();
 const userFile = document.querySelector("#user-file");
 userFile.addEventListener("change", handleChange);
 const downloadDiv = document.querySelector("#downloads");
 
-console.log("up and running")
+
 function handleChange(event) {
     const userFiles = event.target.files;
 
